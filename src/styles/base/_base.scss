@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Uncut Sans", sans-serif;
+    font-display: swap;
+}
+
+html {
+    // background-color: $color1;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#CybotCookiebotDialog {
+    @media screen and (max-width: 780px) {
+        width: 200px !important;
+    }
+}
