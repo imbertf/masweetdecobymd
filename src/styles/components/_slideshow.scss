@@ -1,0 +1,67 @@
+.card-switcher-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.card-switcher-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.card-switcher-button {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.card-switcher-button.active {
+    background-color: #eee;
+}
+
+.card-switcher-cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-switcher-card {
+    display: none;
+}
+
+.card-switcher-card.active {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+    text-decoration: none;
+
+    h2 {
+        margin: 15px;
+        color: $color1;
+        font-size: 30px;
+    }
+}
+
+.switcher-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.switcher-dot.active {
+    background-color: #333;
+}

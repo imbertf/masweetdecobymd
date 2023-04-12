@@ -18,7 +18,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/a-propos" element={<About />} />
+                <Route path="/apropos" element={<About />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <ScrollTopButton />

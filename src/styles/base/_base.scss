@@ -7,7 +7,8 @@
 }
 
 html {
-    // background-color: $color1;
+    background-color: $color5;
+    font-size: calc(15px + 0.390625vw) !important;
 }
 
 body {
@@ -19,4 +20,15 @@ body {
     @media screen and (max-width: 780px) {
         width: 200px !important;
     }
+}
+
+h1 {
+    font-family: "Forum", cursive;
+    // font-size: 1.8rem;
+}
+
+h2,
+p {
+    font-family: "Work Sans", sans-serif;
+    // font-size: 1.2rem;
 }
