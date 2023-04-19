@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Button = ({ type, text, className, onClick }) => {
+    const [isActive, setIsActive] = useState(false);
+    const toggleButton = () => {
+        setIsActive(true);
+    };
+
     return (
-        <button className={className} type={type} onClick={onClick}>
+        <button
+            className={isActive ? "btn-hover" : ""}
+            type={type}
+            onClick={onClick}
+            onMouseEnter={toggleButton}
+        >
             {text}
         </button>
     );

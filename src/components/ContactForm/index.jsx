@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../Button";
 
 const FORM_ENDPOINT =
-    "https://public.herotofu.com/v1/f55a3ea0-c8c8-11ed-8bf6-65581b4c2d05";
+    "https://public.herotofu.com/v1/d6dbc860-dedd-11ed-8a44-d1f0173776c3";
 
 const ContactForm = () => {
     const [submitted, setSubmitted] = useState(false);
@@ -72,7 +72,7 @@ const ContactForm = () => {
                         required
                     />
                 </div>
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" className="btn-container">
                     <Button type={"submit"} text={"Envoyer"} />
                 </div>
             </form>

@@ -1,16 +1,21 @@
 button {
-    border: none;
     width: 150px;
     height: 50px;
-    border-radius: 5px;
-    background: $color1;
-    @media screen and (max-width: 200px) {
-        width: 100%;
-    }
+    border: 1px solid $color6;
+    background-color: transparent;
+    color: $color6;
+
     &:hover {
-        opacity: 0.8;
-        background: $color3;
-        color: $color2;
-        transition: 0.15s ease;
+        animation: btn-hover 0.3s ease-in-out both;
+    }
+}
+
+@keyframes btn-hover {
+    100% {
+        background-color: $color6;
+        color: $white;
+        font-size: 18px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 1px $color7;
     }
 }

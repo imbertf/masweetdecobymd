@@ -15,7 +15,10 @@ const Navbar = () => {
                 <HiOutlineMenuAlt4 />
             </div>
             <ul className={open ? "nav-links active" : "nav-links"}>
-                <HiOutlineMinusSm onClick={handleClick} />
+                <HiOutlineMinusSm
+                    onClick={handleClick}
+                    className="burger-menu-close"
+                />
                 <li>
                     <Link to="/">Home</Link>
                 </li>
