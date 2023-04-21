@@ -52,6 +52,7 @@ const ContactForm = () => {
                         id="name"
                         required
                     />
+                    <p id="ERRORMESSAGE"></p>
                 </div>
                 <div data-aos="fade-up">
                     <label htmlFor="email">Email</label>
@@ -62,6 +63,7 @@ const ContactForm = () => {
                         id="email"
                         required
                     />
+                    <p id="ERRORMESSAGE"></p>
                 </div>
                 <div data-aos="fade-up">
                     <label htmlFor="message">Message</label>
@@ -71,6 +73,7 @@ const ContactForm = () => {
                         id="message"
                         required
                     />
+                    <p id="ERRORMESSAGE"></p>
                 </div>
                 <div data-aos="fade-up" className="btn-container">
                     <Button type={"submit"} text={"Envoyer"} />

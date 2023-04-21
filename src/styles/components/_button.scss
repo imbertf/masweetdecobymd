@@ -2,6 +2,7 @@ button {
     width: 150px;
     height: 50px;
     border: 1px solid $color6;
+    border-radius: 5px;
     background-color: transparent;
     color: $color6;
 
@@ -14,8 +15,7 @@ button {
     100% {
         background-color: $color6;
         color: $white;
-        font-size: 18px;
-        border-radius: 10px;
-        box-shadow: 0 0 5px 1px $color7;
+        font-size: 17px;
+        border-radius: 0;
     }
 }

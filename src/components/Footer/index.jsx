@@ -39,7 +39,7 @@ const Footer = () => {
                 <p>
                     | Website created by{" "}
                     <span onClick={showPepiteggs} className="showPepiteggs">
-                        ©️imbertf
+                        ©️imbertf - www.imbertf.fr
                     </span>{" "}
                     2023 |
                 </p>

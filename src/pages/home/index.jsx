@@ -6,6 +6,10 @@ import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 import ContactForm from "../../components/ContactForm";
 
+function onPhoneClick() {
+    window.open(`tel:+33664641286`);
+}
+
 const Home = () => {
     return (
         <div className="homepage-container">
@@ -13,11 +17,8 @@ const Home = () => {
             <div className="homepage-h1">
                 <h1>Ma sweet deco by MD</h1>
             </div>
-            <Slideshow />
+            {/* <Slideshow /> */}
             <article className="homepage-profil">
-                {/* <div className="homepage-profil-img">
-                    <img src={profilPicture} alt="Profil de Marie" />
-                </div> */}
                 <h2 className="homepage-profil-h2">
                     « Ma mission est de comprendre vos envies, de vous proposer
                     un projet sur mesure pour créer un lieu unique »
@@ -95,11 +96,19 @@ const Home = () => {
                     </p>
                     <Button text={"Plus d'info"} />
                 </article>
+                <article className="homepage-services-article">
+                    <h4>100% dématerialisé</h4>
+                    <p>
+                        Envoyez moi votre plan avec mesures de la pièce, photos,
+                        vos besoins spécifiques en terme de design, couleurs,
+                        ammeublement, décoration. Je vous renvoie par mail le
+                        projet finalisé avec vue 3D et shopping list.
+                    </p>
+                    <Button text={"Plus d'info"} />
+                </article>
             </section>
             <section className="homepage-services">
-                <div className="homepage-image">
-                    {/* <img src={picture3} alt="décoration d'un salon" /> */}
-                </div>
+                <div className="homepage-image"></div>
                 <div className="homepage-services-title">
                     <h3>Home staging</h3>
                     <p>Préparez la vente de votre bien immobilier</p>
@@ -128,6 +137,11 @@ const Home = () => {
                     </p>
                     <Button text={"Plus d'info"} />
                 </article>
+                <p className="homepage-contactTxt">
+                    Contacter moi via le formulaire ou n'hésitez pas à
+                    <span onClick={onPhoneClick}> m'appeler </span>
+                    directement
+                </p>
             </section>
             <ContactForm />
             <>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
+import Deco from "./pages/deco";
 import Contact from "./pages/contact";
 import NotFound from "./pages/notFound";
 import About from "./pages/about";
@@ -17,6 +18,7 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/décoration-d'intérieur" element={<Deco />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/apropos" element={<About />} />
                 <Route path="*" element={<NotFound />} />
