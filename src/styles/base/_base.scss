@@ -2,12 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Uncut Sans", sans-serif;
     font-display: swap;
+    font-family: "Work Sans", sans-serif;
 }
 
 html {
-    background: linear-gradient(#e6ccb2, #f2e9e4, #e6ccb2);
+    background: $white;
+    color: $green;
     font-size: calc(15px + 0.390625vw);
 }
 
@@ -24,10 +25,5 @@ body {
 
 h1 {
     font-family: "Forum", cursive;
-}
-
-h2,
-h3,
-p {
-    font-family: "Work Sans", sans-serif;
+    font-size: calc(40px + 0.390625vw);
 }

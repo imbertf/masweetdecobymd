@@ -1,50 +1,17 @@
 .homepage {
-    &-container {
-        color: $color7;
-
-        p {
-            text-align: center;
-        }
-    }
-
     &-h1 {
+        color: $orange;
         text-align: center;
         margin: 3rem 0;
     }
 
     &-image {
         height: 370px;
-        background-image: url("../../medias/images/pictures/deco4.png");
+        background-image: url("../../medias/images/pictures/deco4.webp");
         background-position: center;
         background-attachment: fixed;
-    }
-
-    &-profil {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 370px;
-        justify-content: center;
-        background-image: url("../../medias/images/pictures/deco3.webp");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-
-        h2 {
-            color: $white;
-        }
-
-        &-img {
-            border-radius: 100px;
-            overflow: hidden;
-            width: 180px;
-            height: 180px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: none;
-            }
+        @media screen and (min-width: 768px) {
+            margin: 0 4rem;
         }
     }
 
@@ -62,13 +29,20 @@
         }
 
         &-article {
-            border-radius: 30px;
             margin: 3rem 1rem;
             padding: 15px;
-            text-align: center;
-            background: linear-gradient(0.3turn, $color10, $color11, $white);
-            box-shadow: 0 0 5px 1px $color8;
-            border: 3px solid white;
+            text-align: left;
+            @media screen and (min-width: 768px) {
+                width: 40%;
+                max-width: 500px;
+                text-align: justify;
+                border-radius: 10px;
+                box-shadow: 0 0 10px lightgrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 3rem;
+            }
 
             h4 {
                 margin-bottom: 1rem;
@@ -77,6 +51,16 @@
             button {
                 margin-top: 1rem;
             }
+
+            &-button {
+                text-align: right;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 
@@ -85,6 +69,12 @@
 
         span {
             font-style: italic;
+            color: $orange;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            margin: 0 3rem;
         }
     }
 }

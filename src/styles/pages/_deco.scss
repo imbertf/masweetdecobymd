@@ -1,0 +1,57 @@
+.decoration-container {
+    &-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-card {
+            width: 80%;
+            margin: 3rem 0;
+
+            h4 {
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                margin-bottom: 1rem;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    .priceTagContainer {
+        display: flex;
+        justify-content: flex-end;
+
+        &-price {
+            width: 100px;
+            height: 50px;
+            border-radius: 2px;
+            background-color: $lighGreen;
+            box-shadow: 0 0 5px 1px #7fdccb;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.services-array {
+    width: 90%;
+    border: 1px solid $orange;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+    &-wrapper {
+        margin: 100px 0;
+    }
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}

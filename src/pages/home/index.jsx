@@ -1,10 +1,12 @@
 import React from "react";
-import Slideshow from "../../components/Slideshow";
-import NavBar from "../../components/NavBar";
 import ScrollTopButton from "../../components/ScrollTopButton";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 import ContactForm from "../../components/ContactForm";
+import Header from "../../components/Header";
+import Banner from "../../components/Banner";
+import bannerPicture from "../../medias/images/pictures/deco3.webp";
+import { Link } from "react-router-dom";
 
 function onPhoneClick() {
     window.open(`tel:+33664641286`);
@@ -13,23 +15,18 @@ function onPhoneClick() {
 const Home = () => {
     return (
         <div className="homepage-container">
-            <NavBar />
-            <div className="homepage-h1">
-                <h1>Ma sweet deco by MD</h1>
+            <Header />
+            <Banner image={bannerPicture} alt={"salon design"} />
+
+            <div className="homepage-services-title" data-aos="fade-up">
+                <h3>Décoration d'intérieur</h3>
+                <p>Recréez vous l'espace qui vous ressemble</p>
             </div>
-            {/* <Slideshow /> */}
-            <article className="homepage-profil">
-                <h2 className="homepage-profil-h2">
-                    « Ma mission est de comprendre vos envies, de vous proposer
-                    un projet sur mesure pour créer un lieu unique »
-                </h2>
-            </article>
             <section className="homepage-services">
-                <div className="homepage-services-title">
-                    <h3>Décoration d'intérieur</h3>
-                    <p>Recréez vous l'espace qui vous ressemble</p>
-                </div>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>Réinventer, oui mais pas seul</h4>
                     <p>
                         Commençons par une visite conseil et échanger autour de
@@ -44,9 +41,19 @@ const Home = () => {
                         <br /> Un compte rendu de visite pour pouvoir créer une
                         base de votre projet sera élaboré par mes soins.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/décoration-d'intérieur">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>
                         Votre projet commence à prendre forme ? Continuons
                         ensemble !
@@ -69,9 +76,19 @@ const Home = () => {
                         accompagne pour réaliser votre shopping list en
                         complément de la réaalisation de la planche d'ambiance.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/décoration-d'intérieur">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>Un design encore plus personalisé</h4>
                     <p>
                         Afin de pouvoir créer un design d'intérieur à la hauteur
@@ -85,18 +102,38 @@ const Home = () => {
                         d'intérieur établis, je peux vous recreer votre
                         environement sous forme de visuel 3D.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/décoration-d'intérieur">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>Projet déco complet</h4>
                     <p>
                         Je vous propose tous mes services réunis dans un projet
                         déco complet sur devis. Vous souhaitez refaire
                         entièrement une chambre, salle de bain, séjour ?
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/décoration-d'intérieur">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>100% dématerialisé</h4>
                     <p>
                         Envoyez moi votre plan avec mesures de la pièce, photos,
@@ -104,16 +141,26 @@ const Home = () => {
                         ammeublement, décoration. Je vous renvoie par mail le
                         projet finalisé avec vue 3D et shopping list.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/décoration-d'intérieur">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
             </section>
+            <div className="homepage-image"></div>
+            <div className="homepage-services-title">
+                <h3>Home staging</h3>
+                <p>Préparez la vente de votre bien immobilier</p>
+            </div>
             <section className="homepage-services">
-                <div className="homepage-image"></div>
-                <div className="homepage-services-title">
-                    <h3>Home staging</h3>
-                    <p>Préparez la vente de votre bien immobilier</p>
-                </div>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>Diagnostic conseil</h4>
                     <p>
                         Dans le cadre de votre projet de vente, je vous propose
@@ -122,9 +169,19 @@ const Home = () => {
                         reprenant les différents conseils et changements à
                         entreprendre.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/home-staging">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <article className="homepage-services-article">
+                <article
+                    className="homepage-services-article"
+                    data-aos="fade-up"
+                >
                     <h4>Home staging virtuel</h4>
                     <p>
                         Envoyez moi les plans de votre pièce avec les mesures,
@@ -135,14 +192,21 @@ const Home = () => {
                         Je vous envoie le projet final sous forme de vue 3D par
                         mail.
                     </p>
-                    <Button text={"Plus d'info"} />
+                    <div
+                        className="homepage-services-article-button"
+                        data-aos="fade-up"
+                    >
+                        <Link to="/home-staging">
+                            <Button text={"Plus d'info"} />
+                        </Link>
+                    </div>
                 </article>
-                <p className="homepage-contactTxt">
-                    Contacter moi via le formulaire ou n'hésitez pas à
-                    <span onClick={onPhoneClick}> m'appeler </span>
-                    directement
-                </p>
             </section>
+            <p className="homepage-contactTxt" data-aos="fade-up">
+                Contacter moi via le formulaire ou n'hésitez pas à
+                <span onClick={onPhoneClick}> m'appeler </span>
+                directement
+            </p>
             <ContactForm />
             <>
                 <ScrollTopButton />
