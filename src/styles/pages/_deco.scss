@@ -9,7 +9,7 @@
         @media screen and (min-width: 768px) {
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: flex-start;
+            align-items: inherit;
             justify-content: center;
         }
 
@@ -37,7 +37,6 @@
             @media screen and (min-width: 768px) {
                 width: 40%;
                 max-width: 500px;
-                min-height: 775px;
                 text-align: justify;
                 border-radius: 10px;
                 box-shadow: 0 0 10px lightgrey;
