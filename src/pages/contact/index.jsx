@@ -22,13 +22,21 @@ const Contact = () => {
             <Banner image={bannerPicture} alt={"salle de bain design"} />
             <h1 data-aos="fade-up">Contactez moi</h1>
             <div className="card-wrapper">
-                <div className="card-wrapper-card" data-aos="fade-up">
+                <div
+                    className="card-wrapper-card"
+                    data-aos="fade-up"
+                    onClick={onPhoneClick}
+                >
                     <CiMobile1 />
-                    <p onClick={onPhoneClick}>0664641286</p>
+                    <p>0664641286</p>
                 </div>
-                <div className="card-wrapper-card" data-aos="fade-up">
+                <div
+                    className="card-wrapper-card"
+                    data-aos="fade-up"
+                    onClick={onEmailClick}
+                >
                     <CiMail />
-                    <p onClick={onEmailClick}>masweetdecobymd@hotmail.com</p>
+                    <p>masweetdecobymd@hotmail.com</p>
                 </div>
             </div>
             <ContactForm />

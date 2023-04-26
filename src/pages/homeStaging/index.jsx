@@ -45,22 +45,30 @@ const Deco = () => {
                         <li>Je vous renvoie le projet finalisé par mail</li>
                         <li>Vue 3D incluse</li>
                     </ul>
-                    <div className="services-array-wrapper" data-aos="fade-up">
-                        <ul>
-                            <li>Désencombrement</li>
-                            <li>Aménagement</li>
-                        </ul>
-                        <div className="priceTagContainer justify-content-center">
-                            <p className="priceTagContainer-price">80€</p>
+                    <div className="services-array-desktop-wrapper">
+                        <div
+                            className="services-array-wrapper"
+                            data-aos="fade-up"
+                        >
+                            <ul>
+                                <li>Désencombrement</li>
+                                <li>Aménagement</li>
+                            </ul>
+                            <div className="priceTagContainer justify-content-center">
+                                <p className="priceTagContainer-price">80€</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="services-array-wrapper" data-aos="fade-up">
-                        <ul>
-                            <li>Intérieur vide</li>
-                            <li>Aménagement</li>
-                        </ul>
-                        <div className="priceTagContainer justify-content-center">
-                            <p className="priceTagContainer-price">70€</p>
+                        <div
+                            className="services-array-wrapper"
+                            data-aos="fade-up"
+                        >
+                            <ul>
+                                <li>Intérieur vide</li>
+                                <li>Aménagement</li>
+                            </ul>
+                            <div className="priceTagContainer justify-content-center">
+                                <p className="priceTagContainer-price">70€</p>
+                            </div>
                         </div>
                     </div>
                 </article>

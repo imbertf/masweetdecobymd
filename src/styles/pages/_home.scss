@@ -32,6 +32,11 @@
             margin: 3rem 1rem;
             padding: 15px;
             text-align: left;
+            &:hover {
+                box-shadow: 0 0 10px $lighGreen;
+                background-color: $lighGreen;
+                color: $white;
+            }
             @media screen and (min-width: 768px) {
                 width: 40%;
                 max-width: 500px;
