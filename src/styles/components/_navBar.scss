@@ -48,6 +48,20 @@
 
 .nav-links li {
     list-style-type: none !important;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    &:hover {
+        background-color: $orange;
+        box-shadow: 0 0 5px 1px $orange;
+
+        & a {
+            color: $white;
+        }
+    }
 }
 
 .nav-links a {
@@ -62,7 +76,7 @@
 }
 
 .nav-links a:hover {
-    color: $color1;
+    color: $white;
 }
 
 @media (max-width: 1200px) {
