@@ -1,85 +1,116 @@
 .homepage {
-    &-h1 {
+  &-wrapper {
+    padding: 0 200px;
+  }
+  &-h1 {
+    color: $orange;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  &-image {
+    height: 370px;
+    background-image: url("../../medias/images/pictures/deco4.webp");
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  &-services {
+    padding-bottom: 1rem;
+
+    &-wrapper {
+      background-color: $green;
+      color: $white;
+      padding-bottom: 10px;
+      box-shadow: 0 4px 10px 1px grey;
+
+      h3 {
         color: $orange;
-        text-align: center;
-        margin: 3rem 0;
+      }
     }
 
-    &-image {
-        height: 370px;
-        background-image: url("../../medias/images/pictures/deco4.webp");
-        background-position: center;
-        background-attachment: fixed;
-        @media screen and (min-width: 768px) {
-            margin: 0 4rem;
-        }
+    &-txt {
+      margin: 30px 0;
+      padding: 0 160px;
+
+      @media screen and (max-width: 880px) {
+        padding: 0 50px;
+      }
     }
 
-    &-services {
-        padding-bottom: 1rem;
-        &-title {
-            text-align: center;
-            margin-bottom: 3rem;
+    &-title {
+      text-align: center;
+      margin-bottom: 3rem;
 
-            h3 {
-                font-family: forum;
-                font-size: 30px;
-                padding-top: 2rem;
-            }
-        }
+      h2 {
+        font-style: italic;
+        color: $orange;
+      }
 
-        &-article {
-            margin: 3rem 1rem;
-            padding: 15px;
-            text-align: left;
-            &:hover {
-                box-shadow: 0 0 10px $lighGreen;
-                background-color: $lighGreen;
-                color: $white;
-            }
-            @media screen and (min-width: 768px) {
-                width: 40%;
-                max-width: 500px;
-                text-align: justify;
-                border-radius: 10px;
-                box-shadow: 0 0 10px lightgrey;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin: 3rem;
-            }
-
-            h4 {
-                margin-bottom: 1rem;
-            }
-
-            button {
-                margin-top: 1rem;
-            }
-
-            &-button {
-                text-align: right;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+      h3 {
+        font-family: forum;
+        font-size: 30px;
+        padding-top: 2rem;
+      }
     }
 
-    &-contactTxt {
-        text-align: center;
+    &-article {
+      margin: 3rem 1rem;
+      padding: 15px;
+      text-align: left;
+      &:hover {
+        box-shadow: 0 0 10px $lighGreen;
+        background-color: $lighGreen;
+        color: $white;
+      }
+      @media screen and (min-width: 768px) {
+        width: 40%;
+        max-width: 500px;
+        text-align: justify;
+        border-radius: 10px;
+        box-shadow: 0 0 10px lightgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3rem;
+      }
 
-        span {
-            font-style: italic;
-            color: $orange;
-        }
+      h4 {
+        margin-bottom: 1rem;
+      }
 
-        @media screen and (min-width: 768px) {
-            text-align: left;
-            margin: 0 3rem;
-        }
+      button {
+        margin-top: 1rem;
+      }
+
+      &-button {
+        text-align: right;
+      }
     }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }
+
+// .pepiteggs-container {
+//   background: black;
+//   color: white;
+//   text-align: center;
+//   padding: 3px 0;
+// }
+
+// .pepiteggsContent {
+//   display: flex;
+//   flex-direction: column;
+
+//   a {
+//     text-decoration: none;
+//   }
+//   .pepiteggs {
+//     color: greenyellow;
+//   }
+// }

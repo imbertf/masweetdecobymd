@@ -1,53 +1,89 @@
 .footerContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    @media screen and (min-width: 780px) {
+  background-color: #1d695b;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (min-width: 780px) {
+  }
+
+  p {
+    color: $white;
+  }
+
+  &-social {
+    h4 {
+      color: white;
+      font-style: italic;
+      margin-bottom: 10px;
     }
 
-    p {
-        color: $color7;
+    ul {
+      list-style-type: none;
+      margin-bottom: 20px;
+
+      li {
+        cursor: pointer;
+        color: $orange;
+      }
     }
 
-    &-social {
-        width: 90%;
+    &-icons {
+      display: flex;
 
-        ul {
-            list-style-type: none;
+      svg {
+        font-size: 30px;
+        margin-right: 10px;
+        color: $orange;
+      }
+    }
+  }
 
-            li {
-                cursor: pointer;
-            }
-        }
+  &-form {
+    max-width: 50%;
+    min-width: 500px;
+    @media screen and (max-width: 880px) {
+      max-width: inherit;
+      min-width: inherit;
     }
 
-    .pepiteggs-containter {
-        width: 90%;
+    &-content-txt {
+      text-align: center;
+      & span {
+        color: $orange;
+      }
     }
+  }
+}
 
-    .pepiteggsContent {
-        display: flex;
-        flex-direction: column;
+.pepiteggs-container {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 3px 0;
+}
 
-        a {
-            text-decoration: none;
-        }
-        .pepiteggs {
-            color: greenyellow;
-        }
-    }
+.pepiteggsContent {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
+  .pepiteggs {
+    color: greenyellow;
+  }
 }
 
 .is-active {
-    display: initial;
+  display: initial;
 }
 
 .is-inactive {
-    display: none;
+  display: none;
 }
 
 .showPepiteggs {
-    cursor: pointer;
+  cursor: pointer;
 }

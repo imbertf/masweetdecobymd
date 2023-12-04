@@ -1,29 +1,27 @@
 .banner-container {
-    height: 370px;
+  height: 370px;
 
-    &-img {
-        height: 100%;
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: center;
-        }
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            @media screen and (min-width: 768px) {
-                max-width: 1200px;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 1px grey;
-                margin: 0 1rem;
-            }
-        }
+  &-img {
+    height: 100%;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
     }
 
-    &-h1 {
-        text-align: center;
-        position: relative;
-        bottom: 360px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      @media screen and (min-width: 768px) {
+        box-shadow: 0 0 5px 1px grey;
+      }
     }
+  }
+
+  &-h1 {
+    color: $white;
+    text-align: center;
+    position: relative;
+    bottom: 360px;
+  }
 }

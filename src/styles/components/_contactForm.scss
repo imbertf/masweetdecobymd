@@ -1,66 +1,72 @@
 .formContent {
-    display: flex;
-    justify-content: center;
-    font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+
+  form {
+    width: 100%;
     @media screen and (min-width: 768px) {
-        width: 50%;
-        margin: 0 3rem;
+      width: 100%;
     }
 
-    form {
-        width: 90%;
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }
-
-        div {
-            margin: 1rem 0;
-        }
-
-        label {
-            margin-right: 10px;
-            font-family: "forum", sans-serif;
-        }
-
-        input {
-            width: 100%;
-            height: 30px;
-            border: 1px solid $green;
-            color: $green;
-            border-radius: 5px;
-            padding: 0 10px;
-            outline-color: $green;
-        }
-
-        textarea {
-            width: 100%;
-            height: 80px;
-            border: 1px solid $green;
-            color: #7f5539;
-            border-radius: 5px;
-            padding: 10px;
-            outline-color: $green;
-        }
+    div {
+      margin: 1rem 0;
     }
 
-    .btn-container {
-        text-align: end;
+    label {
+      margin-right: 10px;
+      font-family: "forum", sans-serif;
     }
+
+    input {
+      width: 100%;
+      height: 30px;
+      border: 1px solid $green;
+      color: $green;
+      border-radius: 5px;
+      padding: 0 10px;
+      outline-color: $green;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      border: 1px solid $green;
+      color: #7f5539;
+      border-radius: 5px;
+      padding: 10px;
+      outline-color: $green;
+    }
+  }
+
+  .btn-container {
+    text-align: end;
+
+    & button {
+      color: $orange;
+      font-weight: bold;
+
+      &:hover {
+        border-color: $lighGreen;
+        color: $lighGreen;
+      }
+    }
+  }
 }
 
 .successMsgContent {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    &-txt {
-        background-color: $white;
-        box-shadow: 0 0 5px 1px $color7;
-        padding: 10px;
-        border-radius: 2px;
-    }
+  &-txt {
+    background-color: $white;
+    box-shadow: 0 0 5px 1px $color7;
+    padding: 10px;
+    border-radius: 2px;
+  }
 
-    h2,
-    p {
-        margin-bottom: 10px;
-    }
+  h2,
+  p {
+    margin-bottom: 10px;
+  }
 }
