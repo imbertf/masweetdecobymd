@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ContactForm from "../ContactForm/index.jsx";
-import { SlSocialFacebook } from "react-icons/sl";
-import { SlSocialInstagram } from "react-icons/sl";
+import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 function onEmailClick() {
@@ -22,10 +21,10 @@ const Footer = () => {
     <>
       <footer
         className="footerContent"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
+      // data-aos="fade-zoom-in"
+      // data-aos-easing="ease-in-back"
+      // data-aos-delay="300"
+      // data-aos-offset="0"
       >
         <div className="footerContent-social">
           <h4>Contact</h4>
@@ -54,6 +53,18 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <SlSocialInstagram />
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                to={
+                  "https://www.linkedin.com/in/mariedecroix/"
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SlSocialLinkedin />
               </Link>
             </li>
           </ul>

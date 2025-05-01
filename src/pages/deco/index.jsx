@@ -9,14 +9,14 @@ import moonBoard from "../../medias/images/chambres/clea/moonboard-chambre-clea.
 import visuel3D from "../../medias/images/plans/vue-3d.webp";
 import visuel2D from "../../medias/images/plans/vue-2d.webp";
 import sdb from "../../medias/images/salle-de-bain/sdb-apres-2.webp";
-import sdb1 from "../../medias/images/salle-de-bain/sdb-apres-1.webp";
+import sdb1 from "../../medias/images/salle-de-bain/PHOTO1.jpg";
 
 const realisationPictures = [
-  { img: "./medias/realisations/salon-apres-1.webp" },
-  { img: "./medias/realisations/salon-apres-2.webp" },
-  { img: "./medias/realisations/salon-apres-3.webp" },
-  { img: "./medias/realisations/sdb-apres-1.webp" },
-  { img: "./medias/realisations/sdb-apres-2.webp" },
+  { img: "./medias/realisations/AR1.jpeg" },
+  { img: "./medias/realisations/BB2.png" },
+  { img: "./medias/realisations/BDM4.jpeg" },
+  { img: "./medias/realisations/JL1.jpeg" },
+  { img: "./medias/realisations/VUE_AERIENNE.png" },
   { img: "./medias/realisations/chambre-clea-3d-1.webp" },
   { img: "./medias/realisations/chambre-clea-3d-2.webp" },
   { img: "./medias/realisations/chambre-clea-3d-3.webp" },
@@ -38,7 +38,6 @@ const Deco = () => {
           data-aos="fade-up"
         >
           <img src={sdb} alt="Salle de bain aménagée" />
-
           <h4>Visite conseils</h4>
           <ul className="decoContainer-services">
             <li>Echanges autour de vos besoins et envies déco</li>
@@ -192,8 +191,8 @@ const Deco = () => {
         </article>
         <h2>Mes réalisations</h2>
         <article className="realisation-container">
-          {realisationPictures.map((element) => (
-            <div className="realisation-container-card">
+          {realisationPictures.map((element, index) => (
+            <div className="realisation-container-card" key={index}>
               <img
                 src={element.img}
                 alt="Réalisation, vue 3D, décoration d'intérieur"

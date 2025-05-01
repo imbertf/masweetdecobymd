@@ -7,10 +7,6 @@ import Banner from "../../components/Banner";
 import bannerPicture from "../../medias/images/pictures/deco3.webp";
 import { Link } from "react-router-dom";
 
-function onPhoneClick() {
-  window.open(`tel:+33664641286`);
-}
-
 const Home = () => {
   return (
     <div className="homepage-container">
@@ -185,28 +181,6 @@ const Home = () => {
         <ScrollTopButton />
       </>
       <Footer />
-      {/* <div className="pepiteggs-container">
-        <p>
-          | Website created by{" "}
-          <span onClick={showPepiteggs} className="showPepiteggs">
-            ©️imbertf - www.imbertf.fr
-          </span>{" "}
-          2023 |
-        </p>
-        <div className={isOpen ? "is-active" : "is-inactive"}>
-          <div className="pepiteggsContent">
-            <span className="pepiteggs">🐈‍⬛ MI MI MI ! </span>
-            <Link
-              to="https://www.imbertf.fr/"
-              className="pepiteggs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              www.imbertf.fr
-            </Link>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
