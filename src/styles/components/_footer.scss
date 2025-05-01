@@ -6,6 +6,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 880px) {
+    padding: 33px;
+  }
+
   p {
     color: $white;
   }
@@ -62,6 +66,15 @@
   color: white;
   text-align: center;
   padding: 3px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    color: skyblue;
+    margin-left: 10px;
+    display: flex;
+  }
 }
 
 .pepiteggsContent {

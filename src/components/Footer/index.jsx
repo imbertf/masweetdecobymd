@@ -21,10 +21,6 @@ const Footer = () => {
     <>
       <footer
         className="footerContent"
-      // data-aos="fade-zoom-in"
-      // data-aos-easing="ease-in-back"
-      // data-aos-delay="300"
-      // data-aos-offset="0"
       >
         <div className="footerContent-social">
           <h4>Contact</h4>
@@ -89,10 +85,19 @@ const Footer = () => {
         <p>
           | Website created by{" "}
           <span onClick={showPepiteggs} className="showPepiteggs">
-            ©️imbertf - www.imbertf.fr
+            ©️imbertf
           </span>{" "}
-          2023 |
+          2025 |
         </p>
+        <Link
+          to={
+            "https://www.linkedin.com/in/mariedecroix/"
+          }
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SlSocialLinkedin />
+        </Link>
         <div className={isOpen ? "is-active" : "is-inactive"}>
           <div className="pepiteggsContent">
             <span className="pepiteggs">🐈‍⬛ MI MI MI ! </span>
